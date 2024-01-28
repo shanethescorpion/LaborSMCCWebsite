@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SMCC Website</title>
     <style>
+        /* CSS Styles */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -25,12 +26,12 @@
         .navbar {
             background-color: #0d0d50;
             color: #fff;
-            padding: 30px;
+            padding: 10px;
             display: flex;
             align-items: center;
         }
         .navbar img {
-            height: 40px;
+            height: 60px;
             margin-right: 10px;
         }
         .navbar h1 {
@@ -42,23 +43,37 @@
         .navbar a {
             color: white;
             text-decoration: none;
-            margin: 5 30px;
+            margin: 5px 30px;
         }
         .navbar a:hover {
             text-decoration: underline;
         }
         header {
-            background-color: #333;
+            background-color: #0d0d50;
             color: #fff;
-            padding: 20px;
+            font-family: Arial;
+            padding: 10px;
             text-align: center;
+            position: relative;
+        }
+        header::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background-color: gold;
+        }
+        hr.new {
+            border: 1px gold;
         }
         nav {
-            padding: 10px;
+            padding: 5px;
             text-align: center;
         }
         nav a {
-            color: #fff;
+            color: black;
             text-decoration: none;
             margin: 0 10px;
         }
@@ -66,19 +81,22 @@
             text-decoration: underline;
         }
         .container {
-            max-width: 800px;
+            max-width: 2000px;
             margin: auto;
-            padding: 20px;
+            padding: 30px;
+            display: inline;
         }
         section {
             margin-bottom: 20px;
             padding: 20px;
-            background-color: #f9f9f9;
             border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
         }
-        h2 {
-            color: #333;
+        h2.new {
+            color: gold;
+            text-align: center;
+            font-size: xx-large;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
         footer {
             background-color: #0d0d50;
@@ -86,38 +104,56 @@
             text-align: center;
             padding: 20px;
         }
-        .section-content {
+        .section-content, .section-contentnew {
             color: gold;
-            background-color: #0d0d50; /* Background color darkblue */
-            padding: 20px; /* Add padding for better readability */
-            border-radius: 8px; /* Add border radius for a rounded appearance */
-            display: flex;
-            flex-direction: column; /* Display items in a column */
-            align-items: center; /* Center items horizontally */
-            text-align: center; /* Center text */
+            background-color: #0d0d50;
+            padding: 30px;
+            border-radius: 8px;
+            text-align: center;
+            margin: 20px;
+            max-width: 500px; /* Added max-width */
+            margin: 20px auto; /* Center horizontally */
         }
         .section-content img {
-            height: 250px; /* Adjust the height of the logo */
-            margin-bottom: 10px; /* Add margin between the logo and text */
+            height: 250px;
+            margin-bottom: 10px;
         }
         ul {
             list-style-type: none;
+            text-align: justify;
+            padding-left: 0;
         }
-        h1.smcc { 
-            -webkit-text-stroke: 1px black; 
-            text-stroke: 2px white; 
-        } 
-        p.smcc{
-            -webkit-text-stroke: 2px black; 
-            text-stroke: 2px white; 
+        ul.contact {
+            list-style:disc;
+            text-align: justify;
+            padding-left: 0;
+        }
+        h1.smcc {
+            -webkit-text-stroke: 2px black;
+            text-stroke: 2px white;
+        }
+        article#home {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        article#home h1 {
+            font-size: 11vh;
+            color: gold;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            margin: 0;
+            text-align: center;
         }
     </style>
 </head>
 <body>
+    <header id="top">
     <div class="background-container"></div>
     <div class="navbar">
         <img src="images/SMCC_LOGO.png" alt="SMCC Logo">
-        <h1 style="font-family: Helvetica;">SMCC</h1>
+        <h1>SAINT MICHAEL COLLEGE OF CARAGA</h1>
         <nav>
             <a href="index.html">Home</a>
             <a href="#about">About SMCC</a>
@@ -125,121 +161,284 @@
             <a href="#services">Services</a>
             <a href="#contact">Contact Us</a>
         </nav>
+    </header>
+    <hr class="new">
     </div>
-    <article id="home" style="text-align: center;">
-            <h1 class="smcc animated-heading" style="font-size: 12vh; text-align: center; color: gold; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Saint Michael College of Caraga</h1>
-            <p class="smcc animated-paragraph" style="font-size: 10vh; text-align: center; color: #fff; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"><i>"A Tradition of Excellence."</i></p><br><br><br><br><br><br><br><br><br><br><br><br>
+    <article id="home">
+        <section>
+        <h1 class="smcc animated-heading">ANNOUNCEMENTS</h1>
+        <img src="images/blec-2023-aug.png" alt="blec logo" height="550" style="margin-right: 3rem;">
+        <img src="images/announcements.jpg" alt="ANNOUNCEMENTS logo" height="550" style="margin-right: 3rem;">
+        <img src="images/presidents-corner.png" alt="presidents-corner logo" height="550">
+        </section>
     </article>
-    <hr><br><br><br>
+    <hr>
     <div class="container">
         <section id="about">
-            <h2>About SMCC</h2>
+            <h2 class="new">About SMCC</h2>
             <div class="section-content">
-                <img src="images/SMCC_LOGO.png" alt="SMCC Logo">
                 <h2 style="color: gold;">SMCC VMGO</h2>
-                <p><strong>Vision</strong><br>
+                <hr>
+                <p><strong>Vision</strong><br><br>
                 Saint Michael College of Caraga envisions to be a university by 2035 and upholds spiritual formation and excellence in teaching, service, and research.</p>
-
-                <p><strong>Missions</strong><br>
+                <hr>
+                <p><strong>Missions</strong><br><br>
                 As such SMCC, commits itself:</p>
                 <ul style="text-align: justify;">
                     <li>SMCC shall provide spiritual formation and learning culture that will ensure the students with excellent and rewarding learning experience that transform lives, abound spirituality, develop skills and prepare future leaders;</li><br>
                     <li>SMCC shall engage to dynamic, innovative, and interdisciplinary researches that are publishable to advance and achieve institutional initiatives; and</li><br>
                     <li>SMCC shall commit to serve the diverse and local communities in fostering innovations through service-learning that enhances reciprocal community partnerships for spiritual and social development.</li>
                 </ul>
-
-                <p><strong>GOAL</strong><br></p>
-                <figcaption>Culture of Excellence in the Areas of Spiritual Formation, Instruction, Research, and Extension, thus Produce Graduates that are Globally Competent, Spiritually Embodied, and Socially Responsible.</figcaption>
-
-                <p><strong>GENERAL OBJECTIVES</strong><br>
+                <hr>
+                <p><strong>GOAL</strong><br><br>
+                Culture of Excellence in the Areas of Spiritual Formation, Instruction, Research, and Extension, thus Produce Graduates that are Globally Competent, Spiritually Embodied, and Socially Responsible.</p>
+                <hr>
+                <p><strong>GENERAL OBJECTIVES</strong><br><br>
                 To integrate positive and evangelical values in all areas and design Christian formation programs that are effective and responsive to the psychospiritual needs of the students, pupils, parents, and personnel. To continuously enhance the curriculum and upgrade teachers’ professional, emotional, spiritual growth, and quality of instruction.</p>
+            </div>
+            <div class="section-content">
+                <h2 style="color: gold;">SMCC Core Values</h2>
+                <hr>
+                  <p><b>S</b> -- ocially Responsible<br><b>M</b> -- issionary<br><b>C</b> -- ommitted<br><b>C</b> -- ompetent</p>
+                <hr>
+                <p><strong>Michaelinian Identity</strong><br><br></p>
+                <ul style="text-align: justify;">
+                    <li>Secured by Saint Michael the Archangel’s Sword of Bravery and Victory, nourished by the faithful acceptance and practice of the Christian teachings and guidance of the Catholic church, animated by MARY’s maternal devotion and intercession, guided by the gospel values, empowered by Christ’s life and examples - the Michaelinians of today and tomorrow are persons who are: </li><br>
+                    <li><b>S</b> – ocially Responsible for the respect, care, love and development of God’s creations as such at all times demonstrate and live-out their social responsibilities;</li><br>
+                    <li><b>M</b> – issionaries of Christian Values, possessing a faith that is dynamic to imbibe and to proclaim and promote the Christian values, hence, sharing in the mission of Christ and of the Catholic church to make all people members of one sheepfold of God;</li><br>
+                    <li><b>C</b> – ommitted Indivuduals and/or Leaders, likened to the faithful commitment of Jesus to His Father, thus, upholding unconditional commitment to value-filled life and actions of love and mercy;</li><br>
+                    <li><b>C</b> – ompetent in their Chosen Field of Endeavors, performing with in-depth confidence as they exude in competence in the performance of their chosen field of endeavors.</li><br>
+                    <li>Therefore, Michaelinians have the identities of Social Responsibility, Missionaries of Christian Values, Committed Individuals and/or Leaders, and Competent in their Chosen Field of Endeavors, which are paramount to transform people to be person-oriented, persons of values, persons of faith and love for God, and persons of love and mercy for others.</li>
+                </ul>
+            </div>
+            <div class="section-content">
+                <h2 style="color: gold;">SMCC History</h2>
+                <hr>
+                <p style="text-align: justify;">In 1948, Nasipit was still a part of the parish of Buenavista, whose parish priest was the late Fr. Martin Westeinde, a Dutch MSC. As the town progressed, population also increased and business gained momentum with the start of the logging industry of Nasipit Lumber Company (NALCO). Fr Martin and his co-adjutor Fr. Atanacio de Castro saw the need of putting up a secondary school. Fr. De Castro was placed in charge of the school.<br><br>
 
-                <!-- Additional content truncated for brevity -->
+                    It started its operation on July 1, 1948, with Rev. Fr. Francisco Van Dyke as the first director. He was succeeded by Rev. Fr. Geraldo Blewanus, Rev. Fr. Enrique Van Ma-anen, Rev. Fr. Venancio Portillo, Rev. Fr. Mateo Van Santvoord, and Rev. Fr. Anthony Krol in that order of succession. Rev. Fr. Krol was the last Dutch priest who served as the school director.<br><br>
+                    
+                    The school site is beside the rectory with an area of 1,630 square metres (17,500 sq ft). Fr. Gerard Cruijen, one of the subsequent directors, converted the nipa- wooden structure into a two-storey building with 16 classrooms.<br><br>
+                    
+                    When the Filipinization Law was implemented in 1975 a layman, Mr Gregorio Orais, became the first layman school director until he retired in 1977. He was followed by Mr. Antonio L. Suarez, the first layman director/principal of the school. Faro Gatchalian followed until 1985, then Mrs. Necita Lim took the helm of directorship until 1991 while acting also as the principal of St. James High School of Buenavista, an adjacent town of Nasipit. In 1991, Fr. Achilles Ayaton became the school director until 1993. In 1994, Msgr. Cesar L. Gatela took over the school's directorship until 1999, when he succumbed to a cardiac arrest. In his term, he bought 19 computers integrating the Computer technology subject in all levels of the High School Department.<br><br>
+                    
+                    The Teatro, Sayaw, at Awit Production(TESAW Production), Center of the Michaelinian Performing Arts was established on June 1, 1997, with Dr. Dennis P. Mausisa as the founder and artistic director.<br><br>
+                    
+                    In 1999, Msgr. Juan de Dios Pueblos, the Bishop of Butuan appointed Msgr. Bienvinido A. Betaizar, PC as the school director who was later promoted as School President until at present.<br><br>
+                    
+                    June 2000, Msgr. Betaizar opened the Grade School department with Mrs. Minda R. Cocon as the first Principal offering Grades I-IV and the College Department with Technical Courses offering with Mr. Antonio L. Suarez as the college administrator until his death in February 2002.<br><br>
+                    
+                    June 2001, Baccalaureate Programs were opened which include Bachelor of Elementary Education, Bachelor of Secondary Education major in English, Bachelor of Science in Business Administration major in Financial Management and Bachelor of Arts in English Language. The Planning and Development Center was established with Dr. Dennis P. Mausisa as the Head of Office.<br><br>
+                    
+                    February 16, 2001, the name Saint Michael's Institute was replaced with Saint Michael College of Caraga as suggested by Mrs. Vanica P. del Rosario during the 1st SMI General Assembly. The name was duly approved by the Securities and Exchange Commission.<br><br>
+                    
+                    In 2002, within three years of operation the College Department was named as one of the Top Three Performing Schools in the Caraga for the Kabalikat Award 2002 of TESDA. Additional courses were opened like 2-Year Computer-Based Accounting Technology, 2 Year Tourism Technology and 2 Year Computer-Technician. Speech subject was introduced in all departments complete with the state of the art speech facilities.<br><br>
+                    
+                    2003, the Accounting Department was established.<br><br>
+                    
+                    June 10, 2005, a four-storey concrete building was inaugurated. The Elementary Department was transferred from the Montinola Building to the main campus where the new building is situated. The new building housed the different offices, Preschool, High School, Mini Hotel, AVR and Faculty Rooms. Bachelor of Science in Computer Science was opened. Mini School bus was acquired.<br><br>
+                    
+                    2006, SMCC Angel Festival was introduced by Dr. Mausisa to the Michaelinian community.<br><br>
+                    
+                    2007, SMCC launches the SMCC Website www.smccnasipit.edu.ph.<br><br>
+                    
+                    2008, College Department awarded by TESDA Region XIII as MODEL TVET Provider School in Agusan del Norte-Butuan City. The SMCC school logo was changed.<br><br>
+                    
+                    2009, Bureau of Immigration granted the school the accreditation permit to accept Foreign Students from Preschool to College. Commission on Higher Education granted the permit to operate Bachelor of Science in Hotel and Restaurant Management.<br><br>
+                    
+                    2010, Bachelor of Science in Information Technology and One Year Seafarer were opened.<br><br>
+                    
+                    2012, additional programs were opened the Bachelor of Science in Criminology, Bachelor of Science in Tourism Management, additional majors in Secondary Education in Math and Science, and the Housekeeping NCII. TESDA bundled programs were opened the Two year Hotel and Restaurant Management with qualifications in Food and Beverage Services NC II and Housekeeping NCII, Two year Information Technology with qualifications in Computer Hardware Servicing NCII and Computer Programming NC IV and Two year Computer Electronics Servicing NC II. New School's Vision and Mission Statement(DBES) as agreed by the DBES Board.<br><br>
+                    
+                    At present, SMCC is one of the Catholic schools in Agusan del Norte and Caraga region.</p>
+            </div>
+            <div class="section-content">
+                <h2 style="color: gold;">SMCC Milestones</h2>
+                <hr>
+                <ul style="text-align: justify;">
+                    <li><b>1947</b><br><br>- Fr. Martin Westeide, a Dutch MSC and Fr. Atanacio de Castro saw the need of putting-up a secondary school.</li><br><hr>
+                    <li><b>1948</b><br><br> - July 1, 1948 permit to operate was granted with Fr. Francisco Van Dyke as its First Director. Mr. Gregorio E. Orais was the principal, cashier, and librarian all together at the same time.</li><br><hr>
+                    <li><b>1949-1952</b><br><br> - Fr. Gerard Cruijen, one of the subsequent directors converted the nipa-wooden structure into a two-storey concrete building with 16 classrooms.</li><br><hr>
+                    <li><b>1961-1963</b><br><br> - School quadrangle was constructed through the effort of Fr. Cruijen who was re-appointed School Direction for the second term.</li><br><hr>
+                    <li><b>1975</b><br><br> - Filipinization Law was implemented and Mr. Gregorio Orais became the first layman school director until he retired in 1977.</li><br><hr>
+                    <li><b>1977</b><br><br> - Mr. Antonio L. Suarez became the first layman Director/Principal in concurrent position.</li><br><hr>
+                    <li><b>1978</b><br><br> - Mr. Faro Gatchalian became the Director/Principal until 1985.</li><br><hr>
+                    <li><b>1985</b><br><br> - Mrs. Necita Lim took at the helm of the administration and became the last layman director until she was replaced by Fr. Achilles Ayaton 1991.</li><br><hr>
+                    <li><b>1994</b><br><br> - Msgr. Cesar L. Gatela was installed as new director and parish priest. In here, he bought 19 computer units and offered computer classes in high school. The Pre-school Department was opened with Sister Minah B. Hijada as the administrator.</li><br><hr>
+                    <li><b>1997</b><br><br> - Roofing of the quadrangle making it the SMI mini gymnasium through the efforts of the alumni, teachers, parents, and Msgr. Gatela.<br><br> - Teatro, Sayaw, at Awit Production (TESAW Production) Center of the Michaelinian Performing Arts was established with Dr. Dennis P. Mausisa as the Founder and Artistic Director.</li><br><hr>
+                    <li><b>1998</b><br><br> - Golden Julibee Celebration attended by prominent personalities. A week-long celebration worth remembering.</li><br><hr>
+                    <li><b>1999</b><br><br> - Due to the sudden death of Msgr. Gatela, Fr. Bienvenido A. Betaizar was appointed as the new School President at the same time parish priest.</li><br><hr>
+                    <li><b>2000</b><br><br> - The Elementary and College Department opened with Grades I-IV and Technical Courses as starters. HRM Department won in the provincial, regional champion, and national finalist in restaurant services category of the TESDA Skills Competition.</li><br><hr>
+                    <li><b>2001</b><br><br> - February 16, 2001 was the launching of the new school name, from Saint Michael Institute to "Saint Michael College of Caraga". Academic courses opened such as Bachelor of Elementary Education (BEEd), Bachelor of Secondary Education (BSEd) major in English, Bachelor of Science in Business Administration (BSBA) major in Financial Management, and Bachelor of Arts in English Language (AB English).<br><br> - The Planning Development Center was established.</li><br><hr>
+                    <li><b>2002</b><br><br> - The Planning Center unfolds the SMCC's Vision 2020 with the "Magbayanihan Tayo" as the flagship program.<br><br>- College Department was awarded as one of the Top Three Performing Schools in the Caraga for the Kabalikat Awards 2002 of TESDA.<br><br> - The Planning Center introduces the Speech Subject in all departments complete with the state of the art facilities, one of its kind in the country.</li><br><hr>
+                    <li><b>2003</b><br><br> - Accounting Department was established.</li><br><hr>
+                    <li><b>2004</b><br><br> - HRM became the Third Placer in the Kumbira Festival Table Setting Category Minadao-Wide HRM Competition in Cagayan de Oro City.</li><br><hr>
+                    <li><b>2005</b><br><br> - June 10, 2005, blessing and inauguration of the Three-Storey SMCC Magbayanihan Center. This building houses the different academic and administrative offices as well as laboratories and classrooms.<br><br> - Commission on Higher Education granted the permit to operate Bachelor of Science in Computer Science.</li><br><hr>
+                    <li><b>2006</b><br><br> - College Department became the Over-all Champion in the Butuan City-Agusan del Norte TESDA Skill Competition with gold awards in the categories of Restaurant Services, Computer Technician, Consumer Electronics, and Cookery.<br><br> - SMCC Angel Festival was introduced by Dr. Dennis P. Mausisa to the Michaelinian community.</li><br><hr>
+                    <li><b>2007</b><br><br> - Launching of the SMCC Website https://smccnasipit.edu.ph/.</li><br><hr>
+                    <li><b>2008</b><br><br> - College Department awarded by TESDA Region XIII as MODEL TVET Provider School in Agusan del Norte-Butuan City.<br><br> - New school logo was implemented.</li><br><hr>
+                    <li><b>2009</b><br><br> - Bureau of Immigration granted the school the accreditation permit to accept Foreign Students from Preschool to College.<br><br> - Commission on Higher Education granted the permit to operate Bachelor of Science in Hotel and Restaurant Management.</li><br><hr>
+                    <li><b>2010</b><br><br> - Commission on Higher Education granted the permit to operate Bachelor of Science in Information Technology.<br><br>- TESDA granted the permit to operate One-Year Seafarer with specialization in Stewarding.</li><br><hr>
+                    <li><b>2012</b><br><br> - Commission on Higher Education granted the permit to operate Bachelor of Science in Criminology, Bachelor of Science in Tourism Management.<br><br> - TESDA granted the permit to operate Housekeeping NCII. Bundled programs were opened the Two-Year Hotel and Restaurant Technology in Food and Beverage Services NCII and Housekeeping NCII. Two-Year Information Technology with qualifications in Computer Hardware Servicing NCII and Computer Programming NCIV, and Two-Year Computer Electronics Technology with qualifications in Computer Hardware Servicing NCII and Consumer Electronics Servicing NCII.<br><br> - New school's Vision and Mission statement adapted from the Diocese of Butuan Educational System's Vision and Mission Statement (DBES) as agreed by DBES Board.</li><br><hr>
+                    <li><b>2014</b><br><br> - SMCC was granted by the Department of Labor and Employment (DOLE) the Certificate of Compliance on General Labor Standards, Occupational Safety and Health Standards, and Child Labor-Free Establishment.<br><br> - New Vision and Mission statement was implemented after the Medium-Term Strategic Planning Workshop duly approved by the Board of Trustees.</li><br><hr>
+                    <li><b>2015</b><br><br> - Opening of additional TESDA Programs, the One-Year Ship's Catering Services NCI (formerly Seafarer) and Visual Graphics NCIII.<br><br> - Permit to operate Senior High School was granted by the Department of Education offering Grades 11 and 12.<br><br> - SMCC Higher Education Research Journal Book 1 was published and granted with ISBN and ISSN.<br><br> - Acquisition of additional lot at Barangay Triangulo which will be the future site of the SMCC Triangulo Campus.<br><br>- Miss Icee Galiato, Fourth (4th) Placer in the Licensure Examination for Teachers Elementary Level September 2015 Board Examination.</li><br><hr>
+                    <li><b>2016</b><br><br> - Opening of addtional departments, the Learning Resource Department and Research and Publication Department. The Learning Resource Department includes the Library, IM Center, and E-Library.<br><br> - Construction of the 4-storey SMCC Annex Building at the former Elementary Department Area.</li><br><hr>
+                    <li><b>2017</b><br><br> - Opening of the SMCC DXSM FM. The only FM Station of the Diocese of Butuan.</li><br><hr>
+                    <li><b>2018</b><br><br> - Opening Bachelor of Physical Education, Bachelor of Technical-Vocational Teacher Education, Bachelor of Library and Information Science, Bachelor of Public Administration, Bachelor of Science in Entrepreneurship.<br><br>
+
+                        - SMCC was certified with ISO 9001:2015. The first school in the Diocese of Butuan with ISO certification and the first school in Caraga Region to be ISO certified 9001:2015 version.<br><br>
+                        
+                        - Accepted as member of the Philippine Society for Quality.<br><br>
+                        
+                        - Granted with the International Accreditation by the Asia Pacific for Events Managements of the United Kingdom last October 12, 2018. The first school in the Caraga Region and Northern Mindanao to be accredited.<br><br>
+                        
+                        - Over-all Champion of the Kumbira Festival 2018, Mindanao-Wide HRM Competition at Cagayan de Oro City.<br><br>
+                        
+                        - Awarded as Most Outstanding Technical Vocational Institution of TESDA Butuan City and Agusan del Norte for 2018.<br><br>
+                        
+                        - Awarded as One of the Top Ten Finance Students of the Philippines 2018.<br><br>
+                        
+                        - Awarded as Outstanding Students of the Caraga Region for 2018.</li><br>
+                </ul>
             </div>
         </section>
         <section id="courses">
-            <h2>Courses Offered</h2>
+            <h2 class="new">Courses Offered</h2>
             <div class="section-content">
-                <img src="images/cas_logo.png" alt="CAS Logo">
-                <h3>College of Arts and Sciences</h3>
-                <ul>
-                    <li>AB English Bachelor of Arts major in English Language</li>
-                </ul>
-                <img src="images/cbm.png" alt="CBM Logo">
-                <h3>College of Business and Management</h3>
-                <ul>
-                    <li>BPA Bachelor of Public Administration</li>
-                    <li>BSE Bachelor of Science in Entreprenuership</li>
-                    <li>BSBA - FM Bachelor of Science in Business Administration major in Financial Management</li>
-                    <li>BSBA - MM Bachelor of Science in Business Administration major in Marketing Management</li>
-                    <li>BSBA - HRM Bachelor of Science in Business Administration major in Human Resource Management</li>
-                </ul>
-                <img src="images/ccis.png" alt="CCIS Logo">
-                <h3>College of Computing and Information Sciences</h3>
-                <ul style="text-align: center;">
-                    <li>DIT Diploma in Information Technology</li>
-                    <li>BSCS Bachelor of Science in Computer Science</li>
-                    <li>BLIS Bachelor of Library and Information Science</li>
-                    <li>BSIT Bachelor of Science in Information Technology</li>
-                </ul>
-                <img src="images/ccje.png" alt="CCJE Logo">
-                <h3>College of Criminal Justice Education</h3>
-                <ul style="text-align: center;">
-                    <li>BSCrim
-                        Bachelor of Science in Criminology</li>
-                    <li>BSISM
-                        Bachelor of Science in Industrial Security Management</li>
-                </ul>
-                <img src="images/cte.png" alt="CTE Logo">
-                <h3>College of Teacher Education</h3>
-                <ul style="text-align: center;">
-                    <li>BPEd
-                        Bachelor of Physical Education</li>
-                    <li>BEEd
-                        Bachelor of Elementary Education</li>
-                    <li>BECEd
-                            Bachelor of Early Childhood Education</li>
-                    <li>BTVTE
-                            Bachelor of Technical Vocational Teacher Education</li>
-                    <li>BSEd - English
-                        Bachelor of Secondary Education major in English</li>
-                    <li>BSEd - Science
-                        Bachelor of Secondary Education major in Science</li>
-                    <li>BSEd - Soc Stud
-                        Bachelor of Secondary Education major in Social Studies</li>
-                </ul>
-                <img src="images/cthm.png" alt="CTHM Logo">
-                <h3>College of Tourism and Hospitality Management</h3>
-                <ul style="text-align: center;">
-                    <li>Housekeeping NC II</li>
-                    <li>Ship's Catering Services NC I</li>
-                    <li>Food and Beverage Services NC II</li>
-                    <li>BSTM
-                        Bachelor of Science in Tourism Management</li>
-                    <li>DTMT
-                            Diploma in Tourism Management Technology</li>
-                    <li>BSHM
-                        Bachelor of Science in Hospitality Management</li>
-                    <li>DHMT
-                        Diploma in Hospitality Management Technology</li>
-                </ul>
+                <div class="college-logo">
+                    <img src="images/cas_logo.png" alt="CAS Logo">
+                </div>
+                <div class="college-courses">
+                    <h3>College of Arts and Sciences</h3>
+                    <hr>
+                    <ul style="text-align: center;">
+                        <li>Bachelor of Arts major in English Language</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="section-content">
+                <div class="college-logo">
+                    <img src="images/cbm.png" alt="CBM Logo">
+                </div>
+                <div class="college-courses">
+                    <h3>College of Business and Management</h3>
+                    <hr>
+                    <ul style="text-align: center;">
+                        <li>Bachelor of Public Administration</li>
+                        <li>Bachelor of Science in Entrepreneurship</li>
+                        <li>Bachelor of Science in Business Administration major in Financial Management</li>
+                        <li>Bachelor of Science in Business Administration major in Marketing Management</li>
+                        <li>Bachelor of Science in Business Administration major in Human Resource Management</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="section-content">
+                <div class="college-logo">
+                    <img src="images/ccis.png" alt="CCIS Logo">
+                </div>
+                <div class="college-courses">
+                    <h3>College of Computing and Information Sciences</h3>
+                    <hr>
+                    <ul style="text-align: center;">
+                        <li>Diploma in Information Technology</li>
+                        <li>Bachelor of Science in Computer Science</li>
+                        <li>Bachelor of Library and Information Science</li>
+                        <li>Bachelor of Science in Information Technology</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="section-content">
+                <div class="college-logo">
+                    <img src="images/ccje.png" alt="CCJE Logo">
+                </div>
+                <div class="college-courses">
+                    <h3>College of Criminal Justice Education</h3>
+                    <hr>
+                    <ul style="text-align: center;">
+                        <li>Bachelor of Science in Criminology</li>
+                        <li>Bachelor of Science in Industrial Security Management</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="section-content">
+                <div class="college-logo">
+                    <img src="images/cte.png" alt="CTE Logo">
+                </div>
+                <div class="college-courses">
+                    <h3>College of Teacher Education</h3>
+                    <hr>
+                    <ul style="text-align: center;">
+                        <li>Bachelor of Physical Education</li>
+                        <li>Bachelor of Elementary Education</li>
+                        <li>Bachelor of Early Childhood Education</li>
+                        <li>Bachelor of Secondary Education major in English</li>
+                        <li>Bachelor of Secondary Education major in Science</li>
+                        <li>Bachelor of Technical Vocational Teacher Education</li>
+                        <li>Bachelor of Secondary Education major in Social Studies</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="section-content">
+                <div class="college-logo">
+                    <img src="images/cthm.png" alt="CTHM Logo">
+                </div>
+                <div class="college-courses">
+                    <h3>College of Tourism and Hospitality Management</h3>
+                    <hr>
+                    <ul style="text-align: center;">
+                        <li>Housekeeping NC II</li>
+                        <li>Ship's Catering Services NC I</li>
+                        <li>Food and Beverage Services NC II</li>
+                        <li>Bachelor of Science in Tourism Management</li>
+                        <li>Diploma in Tourism Management Technology</li>
+                        <li>Bachelor of Science in Hospitality Management</li>
+                        <li>Diploma in Hospitality Management Technology</li>
+                    </ul>
+                </div>
             </div>
         </section>
         <section id="services">
-            <h2>Services</h2>
-            <div class="section-content">
-                <!-- Insert Services Content Here -->
+            <h2 class="new">Services</h2>
+            <div class="section-contentnew">
+                <h2>Student Services</h2>
+                <hr>
+                <ul style="text-align: center;">
+                    <li>Admissions and Scholarship Services</li>
+                    <li>Auxiliary Services</li>
+                    <li>Campus Organizations</li>
+                    <li>Guidance Services</li>
+                    <li>Health Services</li>
+                    <li>Housing & Residential Services</li>
+                    <li>Safety & Security Services</li>
+                    <li>Student Discipline</li>
+                </ul>
+            </div>
+            <div class="section-contentnew">
+                <h2>Online Services</h2>
+                <hr>
+                <ul style="text-align: center;">
+                    <li>Online Enrollment</li>
+                    <li>Student Portal</li>
+                    <li>Official Facebook Page</li>
+                    <li>YouTube Channel</li>
+                </ul>
             </div>
         </section>
         <section id="contact">
-            <h2>Contact Us</h2>
+            <h2 class="new">Contact Us</h2>
             <div class="section-content">
-                <!-- Insert Contact Us Content Here -->
+                <h4 style="color: #fff; text-align: left;">Feel free to contact us on the following details:</h4>
+                <ul class="contact">
+                    <li>09922170933</li><br>
+                    <li>erikashane_labor@smccnasipit.edu.ph</a></li><br>
+                    <li>https://www.facebook.com/SMCCofficial</li>
+                </ul>
             </div>
         </section>
     </div>
     <footer>
         <p>All Rights Reserved &copy; Erika Shane Labor 2024</p>
+        <a href="#top">Back to Top</a>
     </footer>
 </body>
 </html>
