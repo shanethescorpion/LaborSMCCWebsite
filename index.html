@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMCC Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .background-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('images/bg.jpg');
+            background-size: cover;
+            background-position: center;
+            filter: blur(5px); /* Add blur effect */
+            z-index: -1; /* Ensure it's behind other content */
+        }
+        .navbar {
+            background-color: darkblue;
+            color: #fff;
+            padding: 30px;
+            display: flex;
+            align-items: center;
+        }
+        .navbar img {
+            height: 40px;
+            margin-right: 10px;
+        }
+        .navbar h1 {
+            margin: 0;
+        }
+        .navbar nav {
+            margin-left: auto;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8); /* Background color with transparency */
+        }
+        section {
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+        /* Additional Styles for About SMCC Content */
+        .section-content {
+            color: gold; /* Text color gold */
+            background-color: darkblue; /* Background color darkblue */
+            padding: 20px; /* Add padding for better readability */
+            border-radius: 8px; /* Add border radius for a rounded appearance */
+            display: flex;
+            flex-direction: column; /* Display items in a column */
+            align-items: center; /* Center items horizontally */
+            text-align: center; /* Center text */
+        }
+        .section-content img {
+            height: 250px; /* Adjust the height of the logo */
+            margin-bottom: 10px; /* Add margin between the logo and text */
+        }
+    </style>
+</head>
+<body>
+    <div class="background-container"></div>
+    <div class="navbar">
+        <img src="images/SMCC_LOGO.png" alt="SMCC Logo">
+        <h1>Saint Michael College of Caraga</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#about">About SMCC</a>
+            <a href="#courses">Courses Offered</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact Us</a>
+        </nav>
+    </div>
+    <div class="container">
+        <section id="about">
+            <h2>About SMCC</h2>
+            <div class="section-content">
+                <img src="images/SMCC_LOGO.png" alt="SMCC Logo">
+                <h2 style="color: gold;">SMCC VMGO</h2>
+                <p><strong>Vision</strong><br>
+                Saint Michael College of Caraga envisions to be a university by 2035 and upholds spiritual formation and excellence in teaching, service, and research.</p>
+
+                <p><strong>Missions</strong><br>
+                As such SMCC, commits itself:</p>
+                <ul>
+                    <li>SMCC shall provide spiritual formation and learning culture that will ensure the students with excellent and rewarding learning experience that transform lives, abound spirituality, develop skills and prepare future leaders;</li>
+                    <li>SMCC shall engage to dynamic, innovative, and interdisciplinary researches that are publishable to advance and achieve institutional initiatives; and</li>
+                    <li>SMCC shall commit to serve the diverse and local communities in fostering innovations through service-learning that enhances reciprocal community partnerships for spiritual and social development.</li>
+                </ul>
+
+                <p><strong>GOAL</strong><br>
+                Uphold Culture of Excellence in the Areas of Spiritual Formation, Instruction, Research, and Extension, thus Produce Graduates that are Globally Competent, Spiritually Embodied, and Socially Responsible.</p>
+
+                <p><strong>GENERAL OBJECTIVES</strong><br>
+                To integrate positive and evangelical values in all areas and design Christian formation programs that are effective and responsive to the psychospiritual needs of the students, pupils, parents, and personnel. To continuously enhance the curriculum and upgrade teachers’ professional, emotional, spiritual growth, and quality of instruction.</p>
+
+                <!-- Additional content truncated for brevity -->
+            </div>
+        </section>
+        <section id="courses">
+            <h2>Courses Offered</h2>
+            <div class="section-content">
+                <img src="images/CAS_logo.png" alt="CAS Logo">
+                <h3>College of Arts and Sciences</h3>
+                <ul>
+                    <li>AB English Bachelor of Arts major in English Language</li>
+                </ul>
+                <img src="images/cbm.png" alt="CBM Logo">
+                <h3>College of Business and Management</h3>
+                <ul>
+                    <li>BSBA - FM Bachelor of Science in Business Administration major in Financial Management</li>
+                    <li>BSBA - HRM Bachelor of Science in Business Administration major in Human Resource Management</li>
+                    <li>BSBA - MM Bachelor of Science in Business Administration major in Marketing Management</li>
+                    <li>BPA Bachelor of Public Administration</li>
+                    <li>BSE Bachelor of Science in Entreprenuership</li>
+                </ul>
+                <img src="images/ccis.png" alt="CAS Logo">
+                <h3>College of Computing and Information Sciences</h3>
+                <ul>
+                    <li>BSIT  Bachelor of Science in Information Technology</li>
+                    <li>BLIS  Bachelor of Library and Information Science</li>
+                    <li></li>
+                </ul>
+            </div>
+        </section>
+        <section id="services">
+            <h2>Services</h2>
+            <div class="section-content">
+                <!-- Insert Services Content Here -->
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <div class="section-content">
+                <!-- Insert Contact Us Content Here -->
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 SMCC Website</p>
+    </footer>
+</body>
+</html>
