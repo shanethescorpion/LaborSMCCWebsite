@@ -19,11 +19,11 @@
             background-image: url('images/bg.jpg');
             background-size: cover;
             background-position: center;
-            filter: blur(5px); /* Add blur effect */
-            z-index: -1; /* Ensure it's behind other content */
+            filter: blur(5px);
+            z-index: -1;
         }
         .navbar {
-            background-color: darkblue;
+            background-color: #0d0d50;
             color: #fff;
             padding: 30px;
             display: flex;
@@ -42,7 +42,7 @@
         .navbar a {
             color: white;
             text-decoration: none;
-            margin: 0 10px;
+            margin: 5 30px;
         }
         .navbar a:hover {
             text-decoration: underline;
@@ -69,7 +69,6 @@
             max-width: 800px;
             margin: auto;
             padding: 20px;
-            background-color: rgba(255, 255, 255, 0.8); /* Background color with transparency */
         }
         section {
             margin-bottom: 20px;
@@ -82,15 +81,14 @@
             color: #333;
         }
         footer {
-            background-color: #333;
+            background-color: #0d0d50;
             color: #fff;
             text-align: center;
             padding: 20px;
         }
-        /* Additional Styles for About SMCC Content */
         .section-content {
-            color: gold; /* Text color gold */
-            background-color: darkblue; /* Background color darkblue */
+            color: gold;
+            background-color: #0d0d50; /* Background color darkblue */
             padding: 20px; /* Add padding for better readability */
             border-radius: 8px; /* Add border radius for a rounded appearance */
             display: flex;
@@ -102,13 +100,24 @@
             height: 250px; /* Adjust the height of the logo */
             margin-bottom: 10px; /* Add margin between the logo and text */
         }
+        ul {
+            list-style-type: none;
+        }
+        h1.smcc { 
+            -webkit-text-stroke: 1px black; 
+            text-stroke: 2px white; 
+        } 
+        p.smcc{
+            -webkit-text-stroke: 2px black; 
+            text-stroke: 2px white; 
+        }
     </style>
 </head>
 <body>
     <div class="background-container"></div>
     <div class="navbar">
         <img src="images/SMCC_LOGO.png" alt="SMCC Logo">
-        <h1>Saint Michael College of Caraga</h1>
+        <h1 style="font-family: Helvetica;">SMCC</h1>
         <nav>
             <a href="index.html">Home</a>
             <a href="#about">About SMCC</a>
@@ -117,6 +126,11 @@
             <a href="#contact">Contact Us</a>
         </nav>
     </div>
+    <article id="home" style="text-align: center;">
+            <h1 class="smcc animated-heading" style="font-size: 12vh; text-align: center; color: gold; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Saint Michael College of Caraga</h1>
+            <p class="smcc animated-paragraph" style="font-size: 10vh; text-align: center; color: #fff; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"><i>"A Tradition of Excellence."</i></p><br><br><br><br><br><br><br><br><br><br><br><br>
+    </article>
+    <hr><br><br><br>
     <div class="container">
         <section id="about">
             <h2>About SMCC</h2>
@@ -128,14 +142,14 @@
 
                 <p><strong>Missions</strong><br>
                 As such SMCC, commits itself:</p>
-                <ul>
-                    <li>SMCC shall provide spiritual formation and learning culture that will ensure the students with excellent and rewarding learning experience that transform lives, abound spirituality, develop skills and prepare future leaders;</li>
-                    <li>SMCC shall engage to dynamic, innovative, and interdisciplinary researches that are publishable to advance and achieve institutional initiatives; and</li>
+                <ul style="text-align: justify;">
+                    <li>SMCC shall provide spiritual formation and learning culture that will ensure the students with excellent and rewarding learning experience that transform lives, abound spirituality, develop skills and prepare future leaders;</li><br>
+                    <li>SMCC shall engage to dynamic, innovative, and interdisciplinary researches that are publishable to advance and achieve institutional initiatives; and</li><br>
                     <li>SMCC shall commit to serve the diverse and local communities in fostering innovations through service-learning that enhances reciprocal community partnerships for spiritual and social development.</li>
                 </ul>
 
-                <p><strong>GOAL</strong><br>
-                Uphold Culture of Excellence in the Areas of Spiritual Formation, Instruction, Research, and Extension, thus Produce Graduates that are Globally Competent, Spiritually Embodied, and Socially Responsible.</p>
+                <p><strong>GOAL</strong><br></p>
+                <figcaption>Culture of Excellence in the Areas of Spiritual Formation, Instruction, Research, and Extension, thus Produce Graduates that are Globally Competent, Spiritually Embodied, and Socially Responsible.</figcaption>
 
                 <p><strong>GENERAL OBJECTIVES</strong><br>
                 To integrate positive and evangelical values in all areas and design Christian formation programs that are effective and responsive to the psychospiritual needs of the students, pupils, parents, and personnel. To continuously enhance the curriculum and upgrade teachers’ professional, emotional, spiritual growth, and quality of instruction.</p>
@@ -146,7 +160,7 @@
         <section id="courses">
             <h2>Courses Offered</h2>
             <div class="section-content">
-                <img src="images/CAS_logo.png" alt="CAS Logo">
+                <img src="images/cas_logo.png" alt="CAS Logo">
                 <h3>College of Arts and Sciences</h3>
                 <ul>
                     <li>AB English Bachelor of Arts major in English Language</li>
@@ -154,18 +168,60 @@
                 <img src="images/cbm.png" alt="CBM Logo">
                 <h3>College of Business and Management</h3>
                 <ul>
-                    <li>BSBA - FM Bachelor of Science in Business Administration major in Financial Management</li>
-                    <li>BSBA - HRM Bachelor of Science in Business Administration major in Human Resource Management</li>
-                    <li>BSBA - MM Bachelor of Science in Business Administration major in Marketing Management</li>
                     <li>BPA Bachelor of Public Administration</li>
                     <li>BSE Bachelor of Science in Entreprenuership</li>
+                    <li>BSBA - FM Bachelor of Science in Business Administration major in Financial Management</li>
+                    <li>BSBA - MM Bachelor of Science in Business Administration major in Marketing Management</li>
+                    <li>BSBA - HRM Bachelor of Science in Business Administration major in Human Resource Management</li>
                 </ul>
-                <img src="images/ccis.png" alt="CAS Logo">
+                <img src="images/ccis.png" alt="CCIS Logo">
                 <h3>College of Computing and Information Sciences</h3>
-                <ul>
-                    <li>BSIT  Bachelor of Science in Information Technology</li>
-                    <li>BLIS  Bachelor of Library and Information Science</li>
-                    <li></li>
+                <ul style="text-align: center;">
+                    <li>DIT Diploma in Information Technology</li>
+                    <li>BSCS Bachelor of Science in Computer Science</li>
+                    <li>BLIS Bachelor of Library and Information Science</li>
+                    <li>BSIT Bachelor of Science in Information Technology</li>
+                </ul>
+                <img src="images/ccje.png" alt="CCJE Logo">
+                <h3>College of Criminal Justice Education</h3>
+                <ul style="text-align: center;">
+                    <li>BSCrim
+                        Bachelor of Science in Criminology</li>
+                    <li>BSISM
+                        Bachelor of Science in Industrial Security Management</li>
+                </ul>
+                <img src="images/cte.png" alt="CTE Logo">
+                <h3>College of Teacher Education</h3>
+                <ul style="text-align: center;">
+                    <li>BPEd
+                        Bachelor of Physical Education</li>
+                    <li>BEEd
+                        Bachelor of Elementary Education</li>
+                    <li>BECEd
+                            Bachelor of Early Childhood Education</li>
+                    <li>BTVTE
+                            Bachelor of Technical Vocational Teacher Education</li>
+                    <li>BSEd - English
+                        Bachelor of Secondary Education major in English</li>
+                    <li>BSEd - Science
+                        Bachelor of Secondary Education major in Science</li>
+                    <li>BSEd - Soc Stud
+                        Bachelor of Secondary Education major in Social Studies</li>
+                </ul>
+                <img src="images/cthm.png" alt="CTHM Logo">
+                <h3>College of Tourism and Hospitality Management</h3>
+                <ul style="text-align: center;">
+                    <li>Housekeeping NC II</li>
+                    <li>Ship's Catering Services NC I</li>
+                    <li>Food and Beverage Services NC II</li>
+                    <li>BSTM
+                        Bachelor of Science in Tourism Management</li>
+                    <li>DTMT
+                            Diploma in Tourism Management Technology</li>
+                    <li>BSHM
+                        Bachelor of Science in Hospitality Management</li>
+                    <li>DHMT
+                        Diploma in Hospitality Management Technology</li>
                 </ul>
             </div>
         </section>
@@ -183,7 +239,7 @@
         </section>
     </div>
     <footer>
-        <p>&copy; 2024 SMCC Website</p>
+        <p>All Rights Reserved &copy; Erika Shane Labor 2024</p>
     </footer>
 </body>
 </html>
